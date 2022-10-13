@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  quote: MyString
+  answers: 
+  array: 
+  correctAnswerIndex: 1
+  character_id: one
+
+two:
+  quote: MyString
+  answers: 
+  array: 
+  correctAnswerIndex: 1
+  character_id: two
