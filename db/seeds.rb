@@ -95,3 +95,23 @@ Quote.create!(quote: "I'm maxed out!", answers: ["Ross", "Monica", "Chandler", "
 Quote.create!(quote: "I love this shirt!", answers: ["Ross", "Monica", "Chandler", "Rachel", "Joey", "Phoebe"], correctAnswerIndex: 0, character_id: 1)
 Quote.create!(quote: "I'm fine!", answers: ["Ross", "Monica", "Chandler", "Rachel", "Joey", "Phoebe"], correctAnswerIndex: 0, character_id: 1)
 Quote.create!(quote: "Reaaaaly? I mean, even with the card?", answers: ["Ross", "Monica", "Chandler", "Rachel", "Joey", "Phoebe"], correctAnswerIndex: 0, character_id: 1)
+
+
+<div class="card mb-3">
+        <img
+          src={HowWell}
+          class="card-img-top"
+          alt="photo"
+          height={371}
+          width={660}
+        />
+        <div class="card-body">
+          <h5 class="card-title">Quote 1/{quotes.length}</h5>
+          <p class="card-text">{quotes[0].quote}</p>
+          <div>
+            {quotes[0].answers.map((a) => (
+              <button>{a}</button>
+            ))}
+          </div>
+        </div>
+      </div>
