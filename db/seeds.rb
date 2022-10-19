@@ -42,7 +42,7 @@ Quote.create!(quote: "I knew it!", answers: ["Ross", "Monica", "Chandler", "Rach
 Quote.create!(quote: "Well, maybe I don't need your money. Wait, wait. I said, Maybe! ", answers: ["Ross", "Monica", "Chandler", "Rachel", "Joey", "Phoebe"], correctAnswerIndex: 3, character_id: 4)
 Quote.create!(quote: "No. Wait a minute. What was the little mermaid?", answers: ["Ross", "Monica", "Chandler", "Rachel", "Joey", "Phoebe"], correctAnswerIndex: 4, character_id: 5)
 Quote.create!(quote: "Unagi", answers: ["Ross", "Monica", "Chandler", "Rachel", "Joey", "Phoebe"], correctAnswerIndex: 0, character_id: 1)
-Quote.create!(quote: "I wish I could, but I don’t want to.", answers: ["Ross", "Monica", "Chandler", "Rachel", "Joey", "Phoebe"], correctAnswerIndex: 5, character_id: 6)
+Quote.create!(quote: "I wish I could, but I don't want to.", answers: ["Ross", "Monica", "Chandler", "Rachel", "Joey", "Phoebe"], correctAnswerIndex: 5, character_id: 6)
 Quote.create!(quote: "He's a transponster.", answers: ["Ross", "Monica", "Chandler", "Rachel", "Joey", "Phoebe"], correctAnswerIndex: 3, character_id: 4)
 Quote.create!(quote: "Damn all the jellyfish.", answers: ["Ross", "Monica", "Chandler", "Rachel", "Joey", "Phoebe"], correctAnswerIndex: 1, character_id: 2)
 Quote.create!(quote: "Because the more i drink, the less there is for the kids to drink.", answers: ["Ross", "Monica", "Chandler", "Rachel", "Joey", "Phoebe"], correctAnswerIndex: 5, character_id: 6)
@@ -95,23 +95,3 @@ Quote.create!(quote: "I'm maxed out!", answers: ["Ross", "Monica", "Chandler", "
 Quote.create!(quote: "I love this shirt!", answers: ["Ross", "Monica", "Chandler", "Rachel", "Joey", "Phoebe"], correctAnswerIndex: 0, character_id: 1)
 Quote.create!(quote: "I'm fine!", answers: ["Ross", "Monica", "Chandler", "Rachel", "Joey", "Phoebe"], correctAnswerIndex: 0, character_id: 1)
 Quote.create!(quote: "Reaaaaly? I mean, even with the card?", answers: ["Ross", "Monica", "Chandler", "Rachel", "Joey", "Phoebe"], correctAnswerIndex: 0, character_id: 1)
-
-
-<div class="card mb-3">
-        <img
-          src={HowWell}
-          class="card-img-top"
-          alt="photo"
-          height={371}
-          width={660}
-        />
-        <div class="card-body">
-          <h5 class="card-title">Quote 1/{quotes.length}</h5>
-          <p class="card-text">{quotes[0].quote}</p>
-          <div>
-            {quotes[0].answers.map((a) => (
-              <button>{a}</button>
-            ))}
-          </div>
-        </div>
-      </div>
