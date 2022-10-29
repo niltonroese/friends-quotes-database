@@ -23,12 +23,9 @@ ActiveRecord::Schema.define(version: 2022_10_12_055438) do
 
   create_table "quotes", force: :cascade do |t|
     t.string "quote"
-    t.text "answers"
-    t.integer "correctAnswerIndex"
-    t.integer "character_id"
+    t.string "answer"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["character_id"], name: "index_quotes_on_character_id"
   end
 
   create_table "users", force: :cascade do |t|

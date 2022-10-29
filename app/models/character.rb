@@ -1,3 +1,3 @@
 class Character < ApplicationRecord
-    has_many :quotes
+    # has_many :quotes
 end

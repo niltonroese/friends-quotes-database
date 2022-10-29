@@ -14,18 +14,30 @@ class QuotesController < ApplicationController
     end
 
     def create
-        quote = Quote.create(quote_params)
+        quote = Quote.create!(quote_params)
         if quote.valid?
-            render json: quote, status: :created_at
+            render json: quote, status: :accepted
         else
             render json: quote.errors.full_messages, status: :unprocessable_entity
         end
     end
 
+    # def create
+    #     # quote = Quote.new
+    #     # quote.quote = params[:quote]
+    #     # quote.answers = params[:answers]
+    #     # quote.correctAnswerIndex = params[:correctAnswerIndex]
+    #     # quote.character_id = params[:character_id]
+    #     # quote.save
+    #     # puts quote
+    #     quote = Quote.create({quote: params[:quote], answers: params[:answers], correctAnswerIndex: params[:correctAnswerIndex],character_id: params[:character_id]})
+    #     render json: quote
+    # end
+
     private
 
     def quote_params
-        params.require(:quote).permit(:quote, :answers, :correctAnswerIndex, :character_id)
+        params.permit(:quote, :answer)
     end
 
 end
