@@ -1,5 +1,4 @@
 class QuotesController < ApplicationController
-    # before_action :set_quote, only: [:show, :update, :destroy]
 
     # GET /quotes
     def index
@@ -21,18 +20,6 @@ class QuotesController < ApplicationController
             render json: quote.errors.full_messages, status: :unprocessable_entity
         end
     end
-
-    # def create
-    #     # quote = Quote.new
-    #     # quote.quote = params[:quote]
-    #     # quote.answers = params[:answers]
-    #     # quote.correctAnswerIndex = params[:correctAnswerIndex]
-    #     # quote.character_id = params[:character_id]
-    #     # quote.save
-    #     # puts quote
-    #     quote = Quote.create({quote: params[:quote], answers: params[:answers], correctAnswerIndex: params[:correctAnswerIndex],character_id: params[:character_id]})
-    #     render json: quote
-    # end
 
     private
 
