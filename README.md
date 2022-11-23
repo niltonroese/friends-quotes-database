@@ -1,25 +1,45 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Friends Quotes Database
 
-Things you may want to cover:
+## Project and Features
 
-* Ruby version
+Friends Quotes Database is an API that supports the application Friends Quotes Extravaganza. 
+The database provides 3 models: Characters, Quotes and Userscores.
 
-* System dependencies
+## Configuration
 
-* Configuration
+* NPM:
+8.3.1
 
-* Database creation
+* Ruby:
+Puma version: 5.6.5 (ruby 2.6.1-p33) ("Birdie's Version")
 
-* Database initialization
+* Rails:
+6.1.7
 
-* How to run the test suite
+* SQLite3:
+1.4
 
-* Services (job queues, cache servers, search engines, etc.)
+## Getting Started
 
-* Deployment instructions
+Available on development mode.
 
-* ...
+### `Database initialization`
+
+- Install required gems: 
+    bundle install
+- Execute the application:
+    rails s -p 3001
+
+### `Frontend initialization`
+
+https://github.com/niltonroese/friends-quotes-extravaganza/blob/main/README.md
+
+## Demo
+
+Schema
+
+![](../../../../Desktop/Screen%20Shot%202022-11-23%20at%202.39.35%20pm.png)
+
 # friends-quotes-database
