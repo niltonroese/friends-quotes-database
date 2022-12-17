@@ -2,7 +2,7 @@ class UserscoresController < ApplicationController
 
      # GET /userscores
      def index
-        userscores = Userscore.order(score: :desc)
+        userscores = Userscore.order(score: :desc).limit(10)
         userscores_group = userscores.having('MAX(score)').group(:name)
         render json: userscores_group, except: [:created_at, :updated_at]
     end

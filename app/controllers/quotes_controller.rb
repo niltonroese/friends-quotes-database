@@ -7,11 +7,13 @@ class QuotesController < ApplicationController
         render json: quotes_sample, except: [:created_at, :updated_at, :character_id]
     end
 
+    # DISPLAY /quotes
     def show
         quote = Quote.find(params[:id])
         render json: quote
     end
 
+    # ADD /quotes
     def create
         quote = Quote.create!(quote_params)
         if quote.valid?
